@@ -7,6 +7,7 @@
     <!-- this is defining a new namespace with name p -->
 
     <bean id="renderer" class="xmlconfiguration.StandardOutMessageRenderer" p:messageProvider-ref="provider"/> <!-- in the context p find the bean provider -->
+    <!-- <property name="messageProvider" ref="provider"/> for setter injection without the namespace p -->
     <bean id="provider" class="xmlconfiguration.HelloWorldMessageProvider"/>
 </beans>
 
